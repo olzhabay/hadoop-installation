@@ -17,6 +17,8 @@
 
 # Set Hadoop-specific environment variables here.
 export HADOOP_PREFIX=/opt/hadoop
+export HADOOP_HOME=/opt/hadoop
+export PATH=$PATH:/opt/hadoop/bin:/opt/hadoop/sbin
 
 # The only required environment variable is JAVA_HOME.  All others are
 # optional.  When running a distributed configuration it is best to

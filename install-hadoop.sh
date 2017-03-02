@@ -20,11 +20,6 @@ chown -R kaka ${HADOOP_HOME}
 chown -R kaka /tmp/hadoop
 
 
-# set environment variables
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export HADOOP_HOME=/opt/hadoop
-export PATH=$PATH:/opt/hadoop/bin:/opt/hadoop/sbin
-
 # configuring ssh
 ssh-keygen -q -t dsa -P '' -f /root/.ssh/id_dsa \
     && cat /root/.ssh/id_dsa.pub >> /root/.ssh/authorized_keys
